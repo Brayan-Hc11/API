@@ -1,10 +1,10 @@
 <?php
-class Conectar{
+class Categoria extends Conectar{
 
 protected $dbh;
 protected function Conexion(){try{
-    $conectar = $this -> dbh = new PDO("mysql: local=localhost;dbname=ADSOApi08","root","");
-    return $conectar;
+    $Conectar = $this -> dbh = new PDO("mysql: local=localhost;dbname=ADSOApi08","root","");
+    return $Conectar;
 }catch (Exception $e){
     print "!Error BD !". $e->getMessege() ."<br/>";
     die();}}
